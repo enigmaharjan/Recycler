@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetailsActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImg"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rowCount="5"
+        android:columnCount="2"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <TextView
+            android:text="Full Name:"
+            style="@style/grid"/>
+    <TextView
+        android:id="@+id/tvName"
+        style="@style/grid"/>
+
+        <TextView
+            android:text="Contact:"
+            style="@style/grid"/>
+
+    <TextView
+        android:id="@+id/tvContact"
+        style="@style/grid"/>
+
+        <TextView
+            android:text="Address:"
+            style="@style/grid"/>
+
+    <TextView
+        android:id="@+id/tvAddress"
+        style="@style/grid"/>
+
+        <TextView
+            android:text="Email:"
+            style="@style/grid"/>
+
+    <TextView
+        android:id="@+id/tvEmail"
+        style="@style/grid"/>
+    </GridLayout>
+
+
+</LinearLayout>

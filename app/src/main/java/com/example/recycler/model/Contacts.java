@@ -3,11 +3,16 @@ package com.example.recycler.model;
 public class Contacts {
     private String name;
     private String phoneNo;
+    private String email;
+    private String address;
     private int imageId;
 
-    public Contacts(String name, String phoneNo, int imageId) {
+
+    public Contacts(String name, String phoneNo, String email, String address, int imageId) {
         this.name = name;
         this.phoneNo = phoneNo;
+        this.email = email;
+        this.address = address;
         this.imageId = imageId;
     }
 
@@ -34,4 +39,21 @@ public class Contacts {
     public void setImageId(int imageId) {
         this.imageId = imageId;
     }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
 }
